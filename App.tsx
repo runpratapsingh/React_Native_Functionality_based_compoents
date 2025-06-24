@@ -8,6 +8,7 @@
 import { NewAppScreen } from '@react-native/new-app-screen';
 import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
 import BiometricLogin from './src/components/BioMetric';
+import BackgroundSyncing from './src/components/Background_Syncing';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -16,7 +17,8 @@ function App() {
     <View style={styles.container}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       {/* <NewAppScreen templateFileName="App.tsx" /> */}
-      <BiometricLogin />
+      {/* <BiometricLogin /> */}
+      <BackgroundSyncing />
     </View>
   );
 }
